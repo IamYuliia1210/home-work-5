@@ -483,7 +483,7 @@ body {
 }
 .form-legend {
   font-weight: bold;
-  color: #4D5057;
+  color: #6D7B88;
   padding: 0 5px;
 }
 .form-group {
@@ -510,7 +510,7 @@ body {
   border-color: #77B6EA;
 }
 .btn {
-  padding: 10px 18px;
+  padding: 10px 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -520,7 +520,6 @@ body {
 .btn-submit {
   background-color: #FBA69D;
   color: #FEEDEB;
-  margin-top: 10px;
 }
 .btn-submit:hover {
   background-color: #77B6EA;
