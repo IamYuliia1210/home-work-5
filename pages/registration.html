@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- navigation -->
+    <div class="container header-container">
+      <nav class="nav">
+        <ul class="header-nav-list">
+          <li><a class="header-nav-link" href="../index.html">Головна</a></li>
+          <li><a class="header-nav-link" href="articles.html">Статті</a></li>
+          <li><a class="header-nav-link" href="catalog.html">Каталог</a></li>
+          <li><a class="header-nav-link" href="gallary.html">Галерея</a></li>
+          <li><a class="header-nav-link" href="page-nav.html">Навігація</a></li>
+          <li><a class="header-nav-link" href="registration.html">Реєстрація</a></li>
+          <li><a class="header-nav-link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- registration form -->
+    <section class="form-section">
+  <h1 class="form-title">Форма реєстрації</h1>
+  <div class="container form-container">
+    <form class="form" action="https://tests.fomenko.top/echo/index.php" method="get">
+      
+      <!-- Особиста інформація -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Особиста інформація</legend>
+        <div class="form-group">
+          <label class="form-label" for="firsName">Фамілія</label>
+          <input class="form-input" id="firsName" name="login" type="text" placeholder="введіть фамілію">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="lastName">Ім'я</label>
+          <input class="form-input" id="lastName" name="login" type="text" placeholder="введіть ім'я">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="file">Фото</label>
+          <input class="form-input" id="file" name="file" type="file">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" id="email" name="email" type="email" placeholder="введіть email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-input" id="password" name="password" type="password" placeholder="введіть password" minlength="5" maxlength="20">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="site">Адреса сайту</label>
+          <input class="form-input" id="site" name="site" type="url" placeholder="сайт">
+        </div>
+      </fieldset>
+
+      <!-- Стать -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Стать</legend>
+        <p class="form-text">Виберіть стать</p>
+        <div class="form-group">
+          <input class="form-radio" id="male" name="gender" type="radio" value="male">
+          <label class="form-label" for="male">Чоловіча</label>
+        </div>
+        <div class="form-group">
+          <input class="form-radio" id="female" name="gender" type="radio" value="female">
+          <label class="form-label" for="female">Жіноча</label>
+        </div>
+      </fieldset>
+
+      <!-- Дата народження -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Дата народження</legend>
+        <label class="form-label" for="date">Виберіть дату</label>
+        <input class="form-input" id="date" type="date">
+      </fieldset>
+
+      <!-- Вибір кухні -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Вибір кухні</legend>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-uk" name="food" type="checkbox" value="uk">
+          <label class="form-label" for="food-uk">Українська</label>
+        </div>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-it" name="food" type="checkbox" value="it">
+          <label class="form-label" for="food-it">Італійська</label>
+        </div>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-ja" name="food" type="checkbox" value="ja">
+          <label class="form-label" for="food-ja">Японська</label>
+        </div>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-fr" name="food" type="checkbox" value="fr">
+          <label class="form-label" for="food-fr">Французька</label>
+        </div>
+      </fieldset>
+
+      <!-- Про себе -->
+      <fieldset class="form-fieldset">
+        <label class="form-label" for="text">Про себе</label>
+        <textarea class="form-textarea" id="text" name="text" placeholder="Введіть інформацію про себе..." rows="6"></textarea>
+      </fieldset>
+
+      <!-- Кнопки -->
+      <div class="form-buttons">
+        <button class="btn btn-submit" type="submit">Зареєструватися</button>
+        <button class="btn btn-reset" type="reset">Очистити форму</button>
+      </div>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <!--footer -->
+  <footer>
+    <div class="container footer">
+      <p class="unicode-text">&copy;Yuliia Pukhova</p>
+    </div>
+  </footer>
+</body>
+
+</html>

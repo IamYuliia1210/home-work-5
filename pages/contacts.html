@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- navigation -->
+    <div class="container header-container">
+      <nav class="nav">
+        <ul class="header-nav-list">
+          <li><a class="header-nav-link" href="../index.html">Головна</a></li>
+          <li><a class="header-nav-link" href="articles.html">Статті</a></li>
+          <li><a class="header-nav-link" href="catalog.html">Каталог</a></li>
+          <li><a class="header-nav-link" href="gallary.html">Галерея</a></li>
+          <li><a class="header-nav-link" href="page-nav.html">Навігація</a></li>
+          <li><a class="header-nav-link" href="registration.html">Реєстрація</a></li>
+          <li><a class="header-nav-link" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1 class="contacts-title">Контакти</h1>
+  <div class="container contacts-container">
+
+    <!-- Адреса -->
+    <h2 class="contacts-subtitle">Наша адреса</h2>
+    <div class="contacts-address">
+      <address class="contacts-info">
+        г. Київ, <br>
+        Бульвар Лесі Українки, д. 26, <br>
+        4-й поверх, офіс 427
+      </address>
+      <address class="contacts-links">
+        <a class="contacts-link" href="mailto:mango@mail.pig">mango@mail.pig</a>
+        <a class="contacts-link" href="tel:+1112223344">(111) 222-33-44</a>
+      </address>
+    </div>
+
+    <!-- Карта -->
+    <div class="contacts-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267829489!2d30.535810876059003!3d50.42658408908262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2sLesi%20Ukrainky%20Blvd%2C%2026%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2suk!4v1752853360171!5m2!1sen!2suk"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Форма зворотного зв’язку -->
+    <form class="contacts-form" action="https://tests.fomenko.top/echo/index.php" method="get">
+      <h2 class="form-title">Зворотній зв'язок</h2>
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Ваші дані</legend>
+
+        <div class="form-group">
+          <label class="form-label" for="name">Ім'я</label>
+          <input class="form-input" id="name" name="name" type="text" placeholder="Ім'я">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="tel">Контактний телефон</label>
+          <input class="form-input" id="tel" name="tel" type="tel" pattern="380-[0-9]{5}-[0-9]{4}" placeholder="+380">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" id="email" name="email" type="email" placeholder="email">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="txt">Коментар</label>
+          <textarea class="form-textarea" id="txt" name="comment" placeholder="Ваш коментар" rows="6"></textarea>
+        </div>
+
+        <button class="btn btn-submit" type="submit">Відправити</button>
+      </fieldset>
+    </form>
+  </div>
+    </section>
+  </main>
+
+  <!--footer -->
+  <footer>
+    <div class="container footer">
+      <p class="unicode-text">&copy;Yuliia Pukhova</p>
+    </div>
+  </footer>
+</body>
+
+</html>
